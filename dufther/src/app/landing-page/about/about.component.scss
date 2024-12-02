@@ -1,0 +1,125 @@
+@import '../../../assets/styles/variables.scss';
+
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.about-main {
+  padding: 10rem 4rem;
+}
+
+.trending-job {
+
+  .tred-title {
+    font-size: 600;
+    font-size: 38px;
+    color: #201D29;
+  }
+
+  .description {
+    color: #67656B;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  // cards styling
+  .card-custome {
+    border: 0.5px solid #C1C6CF;
+    border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      // transform: scale(1.05);
+      box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .img-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 5.17px 0px 0px 0px;
+      opacity: 0px;
+      box-shadow: 0px 7.24px 18.62px 0px #0000000F;
+
+    }
+
+    .number {
+      font-size: 18px;
+      font-weight: 500;
+      color: #201D29;
+    }
+
+    .city {
+      font-size: 13px;
+      font-weight: 400;
+      color: #67656B;
+    }
+
+    .date {
+      font-size: 12px;
+      font-weight: 300;
+      color: #67656B;
+    }
+
+    .ca-1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #201D29;
+    }
+
+    .ca-2 {
+      color: #67656B;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .ca-3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #201D29;
+    }
+
+    .card-fooer {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card-detail-btn {
+        box-shadow: 0px 2px 5px 0px #00000008;
+        border-radius: 8px;
+        padding: 10px 30px;
+        border: 1.5px solid #C1C6CF;
+
+        &:hover {
+          background: #f4811e;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button-orange {
+  background-color: #f97316;
+
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: #ea580c;
+  }
+}

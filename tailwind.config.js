@@ -1,15 +1,8 @@
 module.exports = {
     theme: {
         extend: {
-            animation: {
-                'float': 'float 6s ease-in-out infinite',
-                'float-delayed': 'float 6s ease-in-out 2s infinite',
-            },
-            keyframes: {
-                float: {
-                    '0%, 100%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-20px)' },
-                }
+            fontFamily: {
+                sans: ['Sinkin Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
             },
         },
     },

@@ -1,8 +1,6 @@
-
-  body {
-    font-family: 'Sinkin Sans', sans-serif;
+body {
+  font-family: "Sinkin Sans", sans-serif;
 }
-
 
 @keyframes float {
   0% {
@@ -263,13 +261,10 @@
   }
 }
 
-
-
-
-.software-engineer  {
+.software-engineer {
   display: flex;
-      flex-direction: column;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* navbar */
@@ -355,4 +350,121 @@
   transition: color 0.3s ease;
 }
 
+/* Accordion Styles */
+.accordion-item {
+  transition: all 0.3s ease;
+}
 
+.accordion-item button {
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item button:focus {
+  outline: none;
+}
+
+/* Icon rotation */
+.accordion-item.active svg {
+  transform: rotate(45deg);
+}
+
+.accordion-item.closed svg {
+  transform: rotate(0deg);
+}
+
+/* Content transition */
+.accordion-item .content {
+  transition: max-height 0.3s ease-out;
+}
+
+/* Active state styles */
+.accordion-item.active {
+  background-color: #f8f9ff;
+}
+
+.accordion-item.active button {
+  background-color: #e5eef5;
+}
+
+/* Hover effects */
+.accordion-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* FAQ Styles */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-button {
+  transition: all 0.3s ease;
+}
+
+.faq-button:hover {
+  background-color: #f0f3ff;
+}
+
+.faq-answer {
+  transition: all 0.3s ease;
+}
+
+/* Active state styles */
+.faq-item.active .faq-button {
+  background-color: #f8f9ff;
+}
+
+.faq-item.active .faq-answer {
+  background-color: #e5eef5;
+}
+
+/* Animation for the icon */
+.faq-button svg {
+  transition: transform 0.3s ease;
+}
+
+.faq-button:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-button {
+    padding: 1rem;
+  }
+
+  .faq-answer {
+    padding: 1rem;
+  }
+}
+
+.like-button {
+  transition: all 0.3s ease;
+}
+
+.like-button:hover {
+  transform: scale(1.1);
+}
+
+.like-button svg {
+  transition: all 0.3s ease;
+}
+
+.like-button-circle {
+  transition: all 0.3s ease;
+}
+
+.like-button-circle:hover {
+  transform: scale(1.1);
+}
+
+.like-button-circle svg {
+  transition: all 0.3s ease;
+}
+
+.like-button-circle:hover svg {
+  fill: currentColor;
+}

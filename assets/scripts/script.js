@@ -97,8 +97,8 @@ function createSectorCards() {
 
     sectors.forEach(sector => {
         const card = `
-            <div class="flex-shrink-0 w-[328.89px] group transition-all duration-300">
-                <div class="rounded-lg overflow-hidden bg-white hover:bg-[#F7931E] transition-colors duration-300">
+            <div class="flex-shrink-0 w-[328.89px] group transition-all duration-300" >
+                <div class="rounded-lg overflow-hidden bg-white hover:bg-[#F7931E] transition-colors duration-300" style="border: 0.44px solid #C1C6CF">
                     <div class="h-[88.89px] overflow-hidden">
                         <img src="${sector.image}" alt="${sector.name}" class="w-full h-full object-cover" />
                     </div>
@@ -165,3 +165,85 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const icon = button.querySelector('svg');
+
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer').forEach(el => {
+        if (el !== answer) {
+            el.classList.add('hidden');
+            el.closest('.faq-item').querySelector('svg').classList.remove('rotate-180');
+        }
+    });
+
+    // Toggle current FAQ
+    answer.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+}
+
+function toggleAccordion(index) {
+    const content = document.getElementById(`content-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+    const accordionItem = content.closest('.accordion-item');
+
+    // Toggle current accordion
+    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+    if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        accordionItem.classList.add('active');
+        // Update icon to minus
+        icon.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                 class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+            </svg>
+        `;
+    } else {
+        content.style.maxHeight = '0';
+        accordionItem.classList.remove('active');
+        // Update icon to plus
+        icon.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                 class="w-6 h-6 transform transition-transform duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4m8-8v16"/>
+            </svg>
+        `;
+    }
+}
+
+// Initialize all accordions as closed on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all accordion contents
+    const allContents = document.querySelectorAll('[id^="content-"]');
+
+    // Set initial state for all accordions
+    allContents.forEach(content => {
+        content.style.maxHeight = '0';
+        const accordionItem = content.closest('.accordion-item');
+        accordionItem.classList.remove('active');
+    });
+});
+
+function toggleLike(button) {
+    // Toggle filled/unfilled state
+    const svg = button.querySelector('svg');
+    const isLiked = button.classList.contains('text-[#FF7A3D]');
+
+    if (isLiked) {
+        // Unlike
+        button.classList.remove('text-[#FF7A3D]');
+        button.classList.add('text-gray-400');
+        svg.setAttribute('fill', 'none');
+        svg.setAttribute('stroke', 'currentColor');
+    } else {
+        // Like
+        button.classList.add('text-[#FF7A3D]');
+        button.classList.remove('text-gray-400');
+        svg.setAttribute('fill', 'currentColor');
+        svg.setAttribute('stroke', 'none');
+    }
+}

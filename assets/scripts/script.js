@@ -90,8 +90,7 @@ const sectors = [
     }
 ];
 
-// Function to create sector cards
-// Function to create sector cards
+
 function createSectorCards() {
     const container = document.querySelector('#scrollContainer > div');
 
@@ -197,9 +196,8 @@ function toggleAccordion(index) {
         accordionItem.classList.add('active');
         // Update icon to minus
         icon.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                 class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         `;
     } else {
@@ -207,9 +205,8 @@ function toggleAccordion(index) {
         accordionItem.classList.remove('active');
         // Update icon to plus
         icon.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                 class="w-6 h-6 transform transition-transform duration-300">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4m8-8v16"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         `;
     }

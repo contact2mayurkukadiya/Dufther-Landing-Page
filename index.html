@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sinkin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dufther</title>
 </head>
@@ -69,7 +70,7 @@
         </div>
     </div>
 
-    <div class="banner bg-[#F8F9FF] pt-24 pb-12 relative overflow-hidden">
+    <div class="banner bg-[#F8F9FF] pt-24 pb-12 relative overflow-hidden" style="height: 92vh;">
         <!-- Yellow Background Accent -->
         <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-[#D8F42B] opacity-10 -rotate-45 transform -z-10"></div>
 
@@ -78,43 +79,61 @@
                 <!-- Left Side - Floating Images -->
                 <div class="w-full lg:w-1/4 relative">
                     <div class="grid grid-cols-2 gap-4">
-                        <!-- Software Engineer -->
-                        <div>
+
+                        <div class="software-engineer">
                             <img src="assets/images/Image.png" alt="Software Engineer" class="">
-                            <p class="text-center text-[#11527E] font-medium text-sm">Software Engineer</p>
+                            <img src="assets/images/Group 427320952.png" alt="">
                         </div>
 
-                        <!-- Chemical Engineer -->
-                        <div>
+                        <div class="software-engineer">
                             <img src="assets/images/2.png" alt="Chemical Engineer" class="">
-                            <p class="text-center text-[#11527E] font-medium text-sm">Chemical Engineer</p>
+                            <img src="assets/images/Group 427320953.png" alt="">
+                        </div>
+                        <div class="software-engineer" style="    position: relative;
+                        left: -20%;
+                        bottom: -108px;">
+                            <img src="assets/images/4.png" alt="HR Manager" class="">
+                            <img src="assets/images/Group 427320958.png" alt="">
                         </div>
 
-                        <!-- HR Manager -->
-                        <div>
+                        <div class="software-engineer" style="    position: relative;
+                        top: -76px;
+                        right: -50%;">
                             <img src="assets/images/5.png" alt="HR Manager" class="">
-                            <p class="text-center text-[#11527E] font-medium text-sm">HR Manager</p>
+                            <img src="assets/images/ht.png" alt="">
                         </div>
 
-                        <div>
+                        <div class="software-engineer" style="    position: relative;
+                        top: -54%;
+                        left: 100%;">
                             <img src="assets/images/2 (2).png" alt="">
-                            <p class="text-center text-[#11527E] font-medium text-sm">Sr. Accountant</p>
+                            <img src="assets/images/Group 427320961.png" alt="">
                         </div>
-                        <!-- Project Manager -->
-                        <div>
+
+                        <div class="software-engineer" style="    position: relative;
+                        top: 110px;
+                        right: -179px;">
                             <img src="assets/images/2 (1).png" alt="Project Manager" class="w-12 h-12 mx-auto mb-2">
-                            <p class="text-center text-[#11527E] font-medium text-sm">Project Manager</p>
+                            <img src="assets/images/uu.png" alt="">
+                        </div>
+
+                        <div class="software-engineer" style="position: relative;
+                        top: -94px;
+                        right: -26px;">
+                            <img src="assets/images/female-model-with-white-t-shirt-posing-removebg-preview 1.png"
+                                alt="Project Manager" class="w-12 h-12 mx-auto mb-2">
+                            <img src="assets/images/Group 427320959.png" alt="">
                         </div>
                     </div>
                 </div>
 
                 <!-- Middle Content -->
-                <div class="w-full lg:w-2/4 text-center">
+                <div class="w-full lg:w-2/4 text-center z-9" style="z-index: 999;">
                     <h1 class="text-4xl lg:text-5xl font-bold mb-4">
                         Collaborative Platform for
-                        <span class="text-[#FF7A3D] block">Recruitment</span>
+                        <span class="text-[#F7931E] block">Recruitment</span>
                     </h1>
-                    <p class="text-gray-600 mb-8">
+                    <p class="w-1/2 mx-auto text-[#67656B] mb-8">
                         Instantly match with top startups to find the work that was made for you.
                     </p>
 
@@ -123,9 +142,10 @@
                         <div class="flex items-center bg-white rounded-full shadow-lg">
                             <input type="text" placeholder="Search Jobs..."
                                 class="w-full px-6 py-4 rounded-l-full focus:outline-none">
-                            <div class="px-4">
+                            <div class="px-2">
                                 <button
-                                    class="bg-[#F7931E] text-white px-8 py-4 rounded-full hover:bg-[#e88616] transition-colors">
+                                    class="bg-[#F7931E] text-white  rounded-full hover:bg-[#e88616] transition-colors"
+                                    style="padding: 10px 42px;">
                                     Search
                                 </button>
                             </div>
@@ -134,10 +154,22 @@
                 </div>
 
                 <!-- Right Side - Person Image -->
-                <div class="w-full lg:w-1/4">
-                    <img src="assets/images/person.png" alt="Professional"
-                        class="w-full h-auto object-cover rounded-2xl">
+                <div class="w-full lg:w-1/4 ">
+                    <img src="assets/images/tik1.png" alt="" style="position: relative;
+                    top: 180px;
+                    left: -150px;">
+                    <img src="assets/images/tik2.png" alt="" style="position: relative;
+                    top: 141px;
+                    left: 252px;">
+                    <img src="assets/images/tik3.png" alt="" style="    position: relative;
+                    top: 112px;
+                    z-index: 99;
+                    /* cursor: progress; */
+                    right: -50px;
+                ">
+                    <img src="assets/icons/girl.png" alt="" class="w-full h-auto object-cover person-img">
                 </div>
+
             </div>
         </div>
     </div>

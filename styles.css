@@ -1,0 +1,358 @@
+
+  body {
+    font-family: 'Sinkin Sans', sans-serif;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* 
+.banner .grid > div {
+  animation: float 3s ease-in-out infinite;
+}
+
+.banner .grid > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.banner .grid > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.banner .grid > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.banner .grid > div:nth-child(5) {
+  animation-delay: 0.8s;
+} */
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .banner .grid {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .banner .right-side-image {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 6rem;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner .search-bar {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Professional Image Section Styles */
+.professional-image-container {
+  position: relative;
+  height: 100%;
+  overflow: visible;
+}
+
+.professional-image-wrapper {
+  position: relative;
+  margin-top: -40px;
+  margin-right: -40px;
+}
+
+.professional-image {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  transform: scale(1.1);
+}
+
+/* Floating Animation for Decorative Elements */
+.floating-element {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Squiggly Line Animation */
+.squiggly-line {
+  stroke: #ff7a3d;
+  opacity: 0.6;
+  animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 1024px) {
+  .professional-image-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .professional-image-wrapper {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .professional-image-container {
+    max-width: 300px;
+  }
+}
+
+/* Enhanced Float Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Background Shape Animation */
+.professional-image-container::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 122, 61, 0.1),
+    rgba(255, 122, 61, 0.05)
+  );
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morphBackground 15s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes morphBackground {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+}
+
+/* Hover Effects */
+.professional-image-wrapper:hover .professional-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-element:hover {
+  animation-play-state: paused;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* peronsal image */
+.person-img {
+  position: relative;
+  left: -33%;
+  top: 100px;
+  z-index: 0;
+}
+
+/* Profile Box Styles */
+.profile-box {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-box:hover {
+  transform: translateY(-5px);
+}
+
+.profile-label {
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for profile boxes */
+@keyframes floatProfile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.profile-box {
+  animation: floatProfile 4s ease-in-out infinite;
+}
+
+.profile-box:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.profile-box:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.profile-box:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.profile-box:nth-child(5) {
+  animation-delay: 2s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .profile-box {
+    transform: none !important;
+  }
+
+  .profile-box .bg-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-box img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-box {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+.software-engineer  {
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+/* navbar */
+.btn-sighnIn {
+  border: 1.5px solid #c1c6cf;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #201d29;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 25px;
+}
+
+/* banner */
+
+/* browser */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.card-carosel {
+  box-shadow: 1.78px 12px 15px 0px #00000012;
+  border-radius: 8px;
+}
+
+.card-carosel:hover {
+  background: #f7931e;
+}
+
+.card-carosel:hover .content-title {
+  color: white;
+}
+
+.card-img-c {
+  position: absolute;
+  top: 27%;
+}
+
+.card-img-c img {
+  border-radius: 5px;
+  box-shadow: 0px 6.44px 16.55px 0px #0000000f;
+}
+
+.content-title {
+  position: relative;
+  padding-top: 2rem;
+  color: #11527e;
+  left: -80px;
+}
+
+/* Add these to your existing CSS */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: #f7931e;
+}
+
+.card-hover:hover h3 {
+  color: white;
+}
+
+/* Update existing styles */
+.content-title {
+  position: relative;
+  padding-top: 2rem;
+  color: #11527e;
+  left: -80px;
+  transition: color 0.3s ease;
+}
+
+

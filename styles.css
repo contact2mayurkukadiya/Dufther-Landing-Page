@@ -4,6 +4,10 @@ body {
   font-family: "Sinkin Sans"
 }
 
+@font-face {
+  src: url("./assets/font/sinkin-sans/SinkinSans-100Thin.otf") format("truetype");
+}
+
 h1,
 h2,
 h3 {

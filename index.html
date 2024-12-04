@@ -193,7 +193,7 @@
                             <!-- Play Button -->
                             <button
                                 class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#FF7A3D]"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#F7931E]"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
@@ -207,7 +207,7 @@
                 <!-- Right Side - Content -->
                 <div class="space-y-6">
                     <h2 class="text-3xl md:text-4xl font-bold">
-                        About <span class="text-[#FF7A3D]">Dufther</span>
+                        About <span class="text-[#F7931E]">Dufther</span>
                     </h2>
 
                     <p class="text-gray-600">
@@ -230,7 +230,7 @@
                         <!-- Feature 1 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0">
-                                <svg class="w-6 h-6 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-6 h-6 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -245,7 +245,7 @@
                         <!-- Feature 2 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0">
-                                <svg class="w-6 h-6 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-6 h-6 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -260,7 +260,7 @@
                         <!-- Feature 3 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0">
-                                <svg class="w-6 h-6 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-6 h-6 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -275,7 +275,7 @@
                         <!-- Feature 4 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0">
-                                <svg class="w-6 h-6 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-6 h-6 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -297,7 +297,7 @@
             <!-- Header -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                    Trending <span class="text-[#FF7A3D]">Jobs</span>
+                    Trending <span class="text-[#F7931E]">Jobs</span>
                 </h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
                     Discover the hottest career opportunities with our "Trending Jobs" feature. Stay ahead in the
@@ -308,10 +308,12 @@
             <!-- Job Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Android Developer Card -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="job-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                    style="border: 0.5px solid #C1C6CF">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center"
+                                style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
                                 <img src="assets/icons/android.svg" alt="Android" class="w-8 h-8">
                             </div>
                             <div>
@@ -320,11 +322,15 @@
                                 <p class="text-gray-500 text-sm">Mar 21, 2022 03:56 PM</p>
                             </div>
                         </div>
-                        <button class="text-gray-400 hover:text-[#FF7A3D]">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
+                        <button class="like-button-circle group">
+                            <div
+                                class="w-12 h-12 bg-[#F8F9FF] rounded-full flex items-center justify-center group-hover:bg-[#FFE5E5]">
+                                <svg class="w-6 h-6 text-gray-400 group-hover:text-[#F7931E]" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
                         </button>
                     </div>
 
@@ -335,10 +341,11 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="bg-[#FF7A3D] text-white px-6 py-2 rounded-full hover:bg-[#ff6a2a] transition-colors">
+                            class="bg-white text-[#F7931E] px-8 py-3 rounded-lg border border-[#F7931E] hover:bg-[#F7931E] hover:text-white transition-colors"
+                            style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
                             Details
                         </button>
-                        <button class="text-gray-600 hover:text-[#FF7A3D]">
+                        <button class="text-[#11527E] hover:text-[#F7931E]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -348,11 +355,13 @@
                 </div>
 
                 <!-- UI/UX Designer Card -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="job-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                    style="border: 0.5px solid #C1C6CF">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                                <img src="assets/icons/ux-design.svg" alt="UX" class="w-8 h-8">
+                            <div class="w-12 h-12  rounded-xl flex items-center justify-center"
+                                style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
+                                <img src="assets/images/ui.png" alt="UX" class="">
                             </div>
                             <div>
                                 <p class="text-gray-500 text-sm">JO0496</p>
@@ -360,11 +369,15 @@
                                 <p class="text-gray-500 text-sm">Mar 21, 2022 03:56 PM</p>
                             </div>
                         </div>
-                        <button class="text-[#FF7A3D]">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
+                        <button class="like-button-circle group">
+                            <div
+                                class="w-12 h-12 bg-[#F8F9FF] rounded-full flex items-center justify-center group-hover:bg-[#FFE5E5]">
+                                <svg class="w-6 h-6 text-gray-400 group-hover:text-[#F7931E]" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
                         </button>
                     </div>
 
@@ -375,10 +388,11 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="bg-white text-[#FF7A3D] border border-[#FF7A3D] px-6 py-2 rounded-full hover:bg-[#FF7A3D] hover:text-white transition-colors">
+                            class="bg-white text-[#F7931E] px-8 py-3 rounded-lg border border-[#F7931E] hover:bg-[#F7931E] hover:text-white transition-colors"
+                            style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
                             Details
                         </button>
-                        <button class="text-gray-600 hover:text-[#FF7A3D]">
+                        <button class="text-[#11527E] hover:text-[#F7931E]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -388,11 +402,13 @@
                 </div>
 
                 <!-- Frontend Developer Card -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="job-card bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                    style="border: 0.5px solid #C1C6CF">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                                <img src="assets/icons/frontend.svg" alt="Frontend" class="w-8 h-8">
+                            <div class="w-12 h-12  rounded-xl flex items-center justify-center"
+                                style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
+                                <img src="assets/images/html.png" alt="Frontend" class="">
                             </div>
                             <div>
                                 <p class="text-gray-500 text-sm">J03491</p>
@@ -400,11 +416,15 @@
                                 <p class="text-gray-500 text-sm">Mar 21, 2022 03:56 PM</p>
                             </div>
                         </div>
-                        <button class="text-gray-400 hover:text-[#FF7A3D]">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
+                        <button class="like-button-circle group">
+                            <div
+                                class="w-12 h-12 bg-[#F8F9FF] rounded-full flex items-center justify-center group-hover:bg-[#FFE5E5]">
+                                <svg class="w-6 h-6 text-gray-400 group-hover:text-[#F7931E]" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
                         </button>
                     </div>
 
@@ -415,10 +435,11 @@
 
                     <div class="flex justify-between items-center">
                         <button
-                            class="bg-white text-[#FF7A3D] border border-[#FF7A3D] px-6 py-2 rounded-full hover:bg-[#FF7A3D] hover:text-white transition-colors">
+                            class="bg-white text-[#F7931E] px-8 py-3 rounded-lg border border-[#F7931E] hover:bg-[#F7931E] hover:text-white transition-colors"
+                            style="box-shadow: 0px 7.24px 18.62px 0px #0000000F;">
                             Details
                         </button>
-                        <button class="text-gray-600 hover:text-[#FF7A3D]">
+                        <button class="text-[#11527E] hover:text-[#F7931E]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -430,7 +451,7 @@
 
             <!-- Browse More Button -->
             <div class="text-center mt-12">
-                <button class="bg-[#FF7A3D] text-white px-8 py-3 rounded-full hover:bg-[#ff6a2a] transition-colors">
+                <button class="bg-[#F7931E] text-white px-10 py-3 rounded-xl hover:bg-[#f9b091] transition-colors">
                     Browse More
                 </button>
             </div>
@@ -460,7 +481,7 @@
         </div>
 
         <!-- View All Button -->
-        <div class="text-center mt-12">
+        <div class="text-center mt-16">
             <button
                 class="bg-[#fff5ee] border-[1.5px] border-[#F7931E] rounded-[5px] px-10 py-2 hover:bg-[#F7931E] group">
                 <span class="text-[15px] font-semibold text-black group-hover:text-white">View All</span>
@@ -481,7 +502,7 @@
                 <!-- Right Side - Content -->
                 <div class="space-y-3">
                     <h2 class="text-3xl md:text-4xl font-bold">
-                        Get the Dufther <span class="text-[#FF7A3D]">Experience</span>
+                        Get the Dufther <span class="text-[#F7931E]">Experience</span>
                     </h2>
                     <p class="text-gray-600">"Unlock company expertise with us!"</p>
                     <img class="pb-6" src="assets/icons/Rectangle 287.png" alt="">
@@ -490,7 +511,7 @@
                         <!-- Feature 1 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -502,7 +523,7 @@
                         <!-- Feature 2 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -515,7 +536,7 @@
                         <!-- Feature 3 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -527,7 +548,7 @@
                         <!-- Feature 4 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -539,7 +560,7 @@
                         <!-- Feature 5 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -551,7 +572,7 @@
                         <!-- Feature 6 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -563,7 +584,7 @@
                         <!-- Feature 7 -->
                         <div class="flex items-start space-x-3">
                             <div class="flex-shrink-0 mt-1">
-                                <svg class="w-5 h-5 text-[#FF7A3D]" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#F7931E]" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
@@ -582,7 +603,7 @@
             <!-- Header -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                    Shaping the future of <span class="text-[#FF7A3D]">Recruitment</span>
+                    Shaping the future of <span class="text-[#F7931E]">Recruitment</span>
                 </h2>
                 <p class="text-gray-600 max-w-3xl mx-auto text-lg">
                     Join us now and revolutionize your business!
@@ -611,7 +632,7 @@
                             <div class="flex justify-center mb-8">
                                 <div class="w-20 h-20 flex items-center justify-center">
                                     <img src="assets/images/Frame.png" alt="Organizations"
-                                        class="w-14 h-14 text-[#FF7A3D]">
+                                        class="w-14 h-14 text-[#F7931E]">
                                 </div>
                             </div>
 
@@ -721,7 +742,7 @@
                     <h2 class="text-4xl md:text-5xl font-bold mb-4">
                         Experience Seamless Innovation
                     </h2>
-                    <h3 class="text-3xl text-[#FF7A3D] font-bold mb-6">
+                    <h3 class="text-3xl text-[#F7931E] font-bold mb-6">
                         Download Our App Today!
                     </h3>
                     <p class="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
@@ -743,112 +764,124 @@
         </div>
     </div>
 
-    <div class="questions bg-white py-16 md:py-24">
+    <div class="questions bg-white md:py-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold">
-                    Frequently asked <span class="text-[#FF7A3D]">questions</span>
+                    Frequently asked <span class="text-[#F7931E]">questions</span>
                 </h2>
                 <p class="text-gray-600 mt-4">
                     Everything you need to know about the Jobs and Recruitment.
                 </p>
             </div>
 
-            <!-- FAQ Accordion -->
+            <!-- FAQ Items -->
             <div class="space-y-4">
                 <!-- Question 1 -->
-                <div class="faq-item bg-[#F8F9FF] rounded-lg overflow-hidden">
-                    <button
-                        class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#F0F3FF] transition-colors">
-                        <span class="text-lg font-semibold">1. How do I create an account on the job seeker
+                <div class="accordion-item bg-white  rounded-lg border border-[#C1C6CF]">
+                    <button onclick="toggleAccordion(1)"
+                        class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
+                        <span class="text-lg font-medium">1. How do I create an account on the job seeker
                             website?</span>
-                        <svg class="w-6 h-6 transform transition-transform faq-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <span id="icon-1" class="text-[#201D29] transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 12H4m8-8v16" />
+                            </svg>
+                        </span>
                     </button>
-                    <div class="faq-answer px-6 py-4 bg-white hidden">
-                        <p class="text-gray-600">
+                    <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
                             Creating an account is simple. Click on the 'Sign Up' or 'Register' button, fill in your
-                            details, and
-                            follow the prompts to complete the registration process.
-                        </p>
+                            details, and follow the prompts to complete the registration process.
+                        </div>
                     </div>
                 </div>
 
                 <!-- Question 2 -->
-                <div class="faq-item bg-[#F8F9FF] rounded-lg overflow-hidden">
-                    <button
-                        class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#F0F3FF] transition-colors">
-                        <span class="text-lg font-semibold">2. How can I search for job openings?</span>
-                        <svg class="w-6 h-6 transform transition-transform faq-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
+                    <button onclick="toggleAccordion(2)"
+                        class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
+                        <span class="text-lg font-medium">2. How can I search for job openings?</span>
+                        <span id="icon-2" class="text-[#201D29] transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 12H4m8-8v16" />
+                            </svg>
+                        </span>
                     </button>
-                    <div class="faq-answer px-6 py-4 bg-white hidden">
-                        <p class="text-gray-600">
+                    <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
                             You can search for jobs using our search bar or browse through categories. Filter results by
-                            location,
-                            salary range, and job type to find the perfect match.
-                        </p>
+                            location, salary range, and job type to find the perfect match.
+                        </div>
                     </div>
                 </div>
 
                 <!-- Question 3 -->
-                <div class="faq-item bg-[#F8F9FF] rounded-lg overflow-hidden">
-                    <button
-                        class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#F0F3FF] transition-colors">
-                        <span class="text-lg font-semibold">3. How do I apply for a job?</span>
-                        <svg class="w-6 h-6 transform transition-transform faq-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
+                    <button onclick="toggleAccordion(3)"
+                        class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
+                        <span class="text-lg font-medium">3. How do I apply for a job?</span>
+                        <span id="icon-3" class="text-[#201D29] transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 12H4m8-8v16" />
+                            </svg>
+                        </span>
                     </button>
-                    <div class="faq-answer px-6 py-4 bg-white hidden">
-                        <p class="text-gray-600">
+                    <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
                             Click on the job listing you're interested in, review the details, and click the 'Apply Now'
-                            button.
-                            Follow the application steps and submit your resume and required documents.
-                        </p>
+                            button. Follow the application steps and submit your resume and required documents.
+                        </div>
                     </div>
                 </div>
 
                 <!-- Question 4 -->
-                <div class="faq-item bg-[#F8F9FF] rounded-lg overflow-hidden">
-                    <button
-                        class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#F0F3FF] transition-colors">
-                        <span class="text-lg font-semibold">4. Can I edit my resume or profile information after
+                <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
+                    <button onclick="toggleAccordion(4)"
+                        class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
+                        <span class="text-lg font-medium">4. Can I edit my resume or profile information after
                             submission?</span>
-                        <svg class="w-6 h-6 transform transition-transform faq-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <span id="icon-4" class="text-[#201D29] transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 12H4m8-8v16" />
+                            </svg>
+                        </span>
                     </button>
-                    <div class="faq-answer px-6 py-4 bg-white hidden">
-                        <p class="text-gray-600">
-                            Yes, you can update your profile and resume at any time through your account settings.
-                            Keep your information current to improve your chances of finding the right job.
-                        </p>
+                    <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                            Yes, you can update your profile and resume at any time through your account settings. Keep
+                            your information current to improve your chances of finding the right job.
+                        </div>
                     </div>
                 </div>
 
                 <!-- Question 5 -->
-                <div class="faq-item bg-[#F8F9FF] rounded-lg overflow-hidden">
-                    <button
-                        class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#F0F3FF] transition-colors">
-                        <span class="text-lg font-semibold">5. How can I track the status of my applications?</span>
-                        <svg class="w-6 h-6 transform transition-transform faq-icon" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
+                    <button onclick="toggleAccordion(5)"
+                        class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
+                        <span class="text-lg font-medium">5. How can I track the status of my applications?</span>
+                        <span id="icon-5" class="text-[#201D29] transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 12H4m8-8v16" />
+                            </svg>
+                        </span>
                     </button>
-                    <div class="faq-answer px-6 py-4 bg-white hidden">
-                        <p class="text-gray-600">
-                            Visit your dashboard to view all your applications and their current status.
-                            You'll receive notifications when there are updates to your applications.
-                        </p>
+                    <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                            Visit your dashboard to view all your applications and their current status. You'll receive
+                            notifications when there are updates to your applications.
+                        </div>
                     </div>
                 </div>
             </div>

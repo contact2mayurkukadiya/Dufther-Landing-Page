@@ -549,3 +549,18 @@ h3 {
     width: 100px;
   }
 }
+
+.social-icon-wrapper {
+  transition: all 0.3s ease;
+}
+
+.social-icon-wrapper img {
+  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(82%) sepia(4%) saturate(464%)
+    hue-rotate(185deg) brightness(89%) contrast(84%); /* #C1C6CF */
+}
+
+.social-icon-wrapper:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(75%) saturate(1691%)
+    hue-rotate(346deg) brightness(98%) contrast(94%); /* #F7931E */
+}

@@ -73,7 +73,8 @@
         <div class="container mx-auto px-4 h-full">
             <div class="relative flex flex-col lg:flex-row items-center justify-between gap-8 h-full">
                 <!-- Left Side -->
-                <div class="absolute w-[460px] h-[426px] opacity-10 grayscale lg:filter-none lg:opacity-100">
+                <div
+                    class="hidden md:block absolute w-[460px] h-[426px] opacity-10 grayscale lg:filter-none lg:opacity-100">
                     <div class="software-engineer top-0 left-0">
                         <img src="assets/images/1.png" alt="Software Engineer" class="">
                     </div>
@@ -99,23 +100,23 @@
 
                 <!-- Middle Content -->
                 <div class="w-full text-center z-9" style="z-index: 999;">
-                    <h1 class="text-[2.81rem] font-semibold mb-4">
+                    <h1 class="text-[2.81rem] font-semibold mb-4 md:p-0 sm:p-9 pt-8 sm:pt-0">
                         Collaborative Platform for
                         <span class="text-[#F7931E] block">Recruitment</span>
                     </h1>
-                    <p class="w-1/3 mx-auto text-[15px] text-[#67656B] mb-8">
+                    <p class="w-full sm:w-1/3 mx-auto text-[15px] text-[#67656B] mb-8">
                         Instantly match with top startups to find the work that
                         <br />was made for you.
                     </p>
 
                     <!-- Search Bar -->
-                    <div class="max-w-xl mx-auto">
+                    <div class="max-w-xl w-full sm:w-3/4 md:w-1/2 mx-auto">
                         <div class="flex items-center bg-white rounded-full shadow-lg">
                             <input type="text" placeholder="Search Jobs..."
                                 class="w-full px-6 py-4 rounded-l-full focus:outline-none">
                             <div class="px-2">
                                 <button
-                                    class="bg-[#F7931E] text-white  rounded-full hover:bg-[#e88616] transition-colors"
+                                    class="bg-[#F7931E] text-white rounded-full hover:bg-[#e88616] transition-colors"
                                     style="padding: 10px 42px;">
                                     Search
                                 </button>
@@ -125,7 +126,7 @@
                 </div>
 
                 <!-- Right Side - Person Image -->
-                <div class="absolute right-0">
+                <div class="hidden md:block absolute right-0">
                     <img src="assets/images/tik1.png" alt="" style="position: relative; top: 180px; left: -150px;">
                     <img src="assets/images/tik2.png" alt="" style="position: relative; top: 141px; left: 252px;">
                     <img src="assets/images/tik3.png" alt=""

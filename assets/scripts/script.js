@@ -106,7 +106,7 @@ function createSectorCards() {
                             <span class="" style="position: relative; top: -35px;">
                                 <img class="" src="${sector.icon}" alt="${sector.name} icon">
                             </span>
-                            <h3 class="text-lg font-medium text-[#11527E] group-hover:text-white pt-8" 
+                            <h3 class="tag-6 group-hover:text-white pt-8" 
                                 style="position: relative; left: -81px;">
                                 ${sector.name}
                             </h3>

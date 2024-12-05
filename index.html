@@ -521,8 +521,8 @@
             </div>
 
             <!-- Cards Section (using flex only) -->
-            <div class="max-w-4xl mx-auto overflow-x-auto">
-                <div class="cards-cm flex align-items-center flex-nowrap">
+            <div class=" mx-auto overflow-x-auto">
+                <div class="cards-cm flex  align-items-center flex-nowrap">
                     <!-- Organizations Card -->
                     <div class="transform hover:-translate-y-2 transition-all duration-300 w-[350px] flex-shrink-0">
                         <div class="relative">
@@ -632,12 +632,18 @@
                 <!-- Left Side - Mobile Image (30%) -->
                 <div class="w-full lg:w-[30%] relative mt-8">
                     <!-- Mobile Device Container -->
-                    <div class="flex relative w-[320px] md:w-[380px] md:mx-auto">
+                    <div class="flex relative w-[320px] md:w-[380px] ">
                         <!-- Phone Frame -->
                         <img src="assets/images/Union.png" alt="iPhone Frame" class="w-full h-auto relative z-20">
 
                         <img src="assets/images/iPhone 14 Pro Max.png" alt=""
                             class="w-full h-auto relative z-20 left-[-181px]">
+                    </div>
+                    <div class=" px-20 lg:hidden items-center mt-4 ">
+                        <a href="#" class="transform hover:scale-105 transition-transform duration-300">
+                            <img src="assets/images/Google Play.png" alt="Get it on Google Play"
+                                class="h-[54px] w-auto">
+                        </a>
                     </div>
                 </div>
 
@@ -657,7 +663,7 @@
                     </p>
 
                     <!-- Download Button -->
-                    <div class="flex items-center mt-4">
+                    <div class="hidden lg:flex items-center mt-4 ">
                         <a href="#" class="transform hover:scale-105 transition-transform duration-300">
                             <img src="assets/images/Google Play.png" alt="Get it on Google Play"
                                 class="h-[54px] w-auto">
@@ -672,10 +678,10 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold">
+                <h2 class="main-title">
                     Frequently asked <span class="text-[#F7931E]">questions</span>
                 </h2>
-                <p class="text-gray-600 mt-4">
+                <p class="trending-content mt-4">
                     Everything you need to know about the Jobs and Recruitment.
                 </p>
             </div>
@@ -686,7 +692,7 @@
                 <div class="accordion-item bg-white  rounded-lg border border-[#C1C6CF]">
                     <button onclick="toggleAccordion(1)"
                         class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
-                        <span class="text-lg font-medium">1. How do I create an account on the job seeker
+                        <span class="tag-10">1. How do I create an account on the job seeker
                             website?</span>
                         <span id="icon-1" class="text-[#201D29] transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -697,7 +703,7 @@
                         </span>
                     </button>
                     <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B] tag-11">
                             Creating an account is simple. Click on the 'Sign Up' or 'Register' button, fill in your
                             details, and follow the prompts to complete the registration process.
                         </div>
@@ -708,7 +714,7 @@
                 <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
                     <button onclick="toggleAccordion(2)"
                         class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
-                        <span class="text-lg font-medium">2. How can I search for job openings?</span>
+                        <span class="tag-10">2. How can I search for job openings?</span>
                         <span id="icon-2" class="text-[#201D29] transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
@@ -718,7 +724,7 @@
                         </span>
                     </button>
                     <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B] tag-11">
                             You can search for jobs using our search bar or browse through categories. Filter
                             results by
                             location, salary range, and job type to find the perfect match.
@@ -730,7 +736,7 @@
                 <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
                     <button onclick="toggleAccordion(3)"
                         class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
-                        <span class="text-lg font-medium">3. How do I apply for a job?</span>
+                        <span class="tag-10">3. How do I apply for a job?</span>
                         <span id="icon-3" class="text-[#201D29] transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
@@ -740,7 +746,7 @@
                         </span>
                     </button>
                     <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B] tag-11">
                             Click on the job listing you're interested in, review the details, and click the 'Apply
                             Now'
                             button. Follow the application steps and submit your resume and required documents.
@@ -752,7 +758,7 @@
                 <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
                     <button onclick="toggleAccordion(4)"
                         class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
-                        <span class="text-lg font-medium">4. Can I edit my resume or profile information after
+                        <span class="tag-10">4. Can I edit my resume or profile information after
                             submission?</span>
                         <span id="icon-4" class="text-[#201D29] transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -763,7 +769,7 @@
                         </span>
                     </button>
                     <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B] tag-11">
                             Yes, you can update your profile and resume at any time through your account settings.
                             Keep
                             your information current to improve your chances of finding the right job.
@@ -775,7 +781,7 @@
                 <div class="accordion-item bg-white rounded-lg border border-[#C1C6CF]">
                     <button onclick="toggleAccordion(5)"
                         class="w-full flex justify-between items-center p-6 text-[#201D29] hover:bg-[#E5EEF5] rounded-lg transition-all">
-                        <span class="text-lg font-medium">5. How can I track the status of my applications?</span>
+                        <span class="tag-10">5. How can I track the status of my applications?</span>
                         <span id="icon-5" class="text-[#201D29] transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" class="w-6 h-6 transform transition-transform duration-300">
@@ -785,7 +791,7 @@
                         </span>
                     </button>
                     <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="p-6 bg-[#E5EEF5] text-[#67656B]">
+                        <div class="p-6 bg-[#E5EEF5] text-[#67656B] tag-11">
                             Visit your dashboard to view all your applications and their current status. You'll
                             receive
                             notifications when there are updates to your applications.
@@ -798,7 +804,7 @@
 
     <!-- Footer -->
     <div class="footer bg-[#11527E] py-8 md:py-12">
-        <div class="container mx-auto px-4 md:px-20">
+        <div class="container mx-auto px-6 md:px-20">
             <!-- Top Section -->
             <div class="flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between">
                 <!-- Left Side -->
@@ -813,15 +819,13 @@
                         <!-- Quick Links -->
                         <div>
                             <ul class="space-y-3 md:space-y-4">
-                                <li><a href="#" class="text-white hover:text-gray-200 text-sm md:text-[15px]">Jobs</a>
+                                <li><a href="#" class="text-white tag-4">Jobs</a>
                                 </li>
-                                <li><a href="#" class="text-white hover:text-gray-200 text-sm md:text-[15px]">About
+                                <li><a href="#" class="text-white tag-4">About
                                         Us</a></li>
-                                <li><a href="#"
-                                        class="text-white hover:text-gray-200 text-sm md:text-[15px]">Pricing</a>
+                                <li><a href="#" class="text-white tag-4">Pricing</a>
                                 </li>
-                                <li><a href="#"
-                                        class="text-white hover:text-gray-200 text-sm md:text-[15px]">Contact</a>
+                                <li><a href="#" class="text-white tag-4">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -829,15 +833,13 @@
                         <!-- Other Links -->
                         <div>
                             <ul class="space-y-3 md:space-y-4">
-                                <li><a href="#"
-                                        class="text-white hover:text-gray-200 text-sm md:text-[15px]">Policies</a>
+                                <li><a href="#" class="text-white tag-4">Policies</a>
                                 </li>
-                                <li><a href="#" class="text-white hover:text-gray-200 text-sm md:text-[15px]">Partner
+                                <li><a href="#" class="text-white tag-4">Partner
                                         Us</a></li>
-                                <li><a href="#"
-                                        class="text-white hover:text-gray-200 text-sm md:text-[15px]">Contact</a>
+                                <li><a href="#" class="text-white tag-4">Contact</a>
                                 </li>
-                                <li><a href="#" class="text-white hover:text-gray-200 text-sm md:text-[15px]">Other</a>
+                                <li><a href="#" class="text-white tag-4">Other</a>
                                 </li>
                             </ul>
                         </div>
@@ -847,7 +849,7 @@
                 <!-- Email Section (Mobile Only) -->
                 <div class="flex items-center ">
                     <img src="assets/images/message.png" class="w-5 h-5 mr-2">
-                    <a href="mailto:solutions@dufther.com" class="text-white hover:text-[#b3d0e5] text-sm">
+                    <a href="mailto:solutions@dufther.com" class="text-white tag-4 ">
                         solutions@dufther.com
                     </a>
                 </div>
@@ -858,7 +860,7 @@
                         <div>
                             <img src="assets/icons/Group 427320962.png" alt="mail" class="w-8 h-8">
                         </div>
-                        <h4 class="text-white font-semibold text-lg md:text-xl">Signup for our Newsletter</h4>
+                        <h4 class="text-white tag-3 ">Signup for our Newsletter</h4>
                     </div>
 
                     <div class="space-y-2">
@@ -886,23 +888,27 @@
                 </div>
 
                 <!-- Copyright -->
-                <p class="text-[#11527E] text-xs md:text-[15px] order-1 md:order-2">©dufther 2023. all rights
+                <p class="text-black tag-4 order-1 md:order-2">©dufther 2023. all rights
                     reserved.
                 </p>
 
                 <!-- Social Icons -->
                 <div class="flex items-center gap-4 md:gap-6 order-3">
                     <a href="#" class="social-icon-wrapper">
-                        <img src="assets/icons/Frame (3).png" alt="Facebook" class="w-5 h-5 md:w-6 md:h-6">
+                        <img src="assets/icons/Frame (3).png" alt="Facebook"
+                            class="w-5 h-5 md:w-6 md:h-6 initial-color hover:orange-filter transition-all duration-300">
                     </a>
                     <a href="#" class="social-icon-wrapper">
-                        <img src="assets/icons/Frame (4).png" alt="Twitter" class="w-5 h-5 md:w-6 md:h-6">
+                        <img src="assets/icons/Frame (4).png" alt="Twitter"
+                            class="w-5 h-5 md:w-6 md:h-6 initial-color hover:orange-filter transition-all duration-300">
                     </a>
                     <a href="#" class="social-icon-wrapper">
-                        <img src="assets/icons/Frame (5).png" alt="Instagram" class="w-5 h-5 md:w-6 md:h-6">
+                        <img src="assets/icons/Frame (5).png" alt="Instagram"
+                            class="w-5 h-5 md:w-6 md:h-6 initial-color hover:orange-filter transition-all duration-300">
                     </a>
                     <a href="#" class="social-icon-wrapper">
-                        <img src="assets/icons/Frame (6).png" alt="YouTube" class="w-5 h-5 md:w-6 md:h-6">
+                        <img src="assets/icons/Frame (6).png" alt="YouTube"
+                            class="w-5 h-5 md:w-6 md:h-6 initial-color hover:orange-filter transition-all duration-300">
                     </a>
                 </div>
             </div>

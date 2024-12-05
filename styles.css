@@ -65,6 +65,12 @@ h3 {
   font-weight: 600;
   color: #201D29;
 }
+.main-title-2{
+  font-family: "Sinkin Sans";
+  font-size: 32px;
+  font-weight: 600;
+  color: #201D29;
+}
 
 
 .trending-content {
@@ -197,6 +203,10 @@ h3 {
   }
 
   .main-title {
+    font-size: 32px;
+  }
+
+  .main-title-2 {
     font-size: 24px;
   }
 

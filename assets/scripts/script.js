@@ -96,7 +96,7 @@ function createSectorCards() {
 
     sectors.forEach(sector => {
         const card = `
-            <div class="flex-shrink-0 w-[328.89px] group transition-all duration-300" >
+            <div class="flex-shrink-0 w-[328.89px] group transition-all duration-300 scroll-snap-center" >
                 <div class="rounded-lg overflow-hidden bg-white hover:bg-[#F7931E] transition-colors duration-300" style="border: 0.44px solid #C1C6CF">
                     <div class="h-[88.89px] overflow-hidden">
                         <img src="${sector.image}" alt="${sector.name}" class="w-full h-full object-cover" />

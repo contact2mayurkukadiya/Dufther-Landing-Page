@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
-@import './assets/font/sinkinSans.css';
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
+@import "./assets/font/sinkinSans.css";
 
 body {
   /* font-family: "Sinkin Sans", sans-serif; */
@@ -35,14 +35,14 @@ h3 {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-weight: 500;
-  color: #201D29;
+  color: #201d29;
 }
 
 .menu-text-btn-1 {
   font-family: "Plus Jakarta Sans";
   font-size: 15px;
   font-weight: 600;
-  background: #201D29;
+  background: #201d29;
   color: #ffffff;
   padding: 10px 30px;
   border-radius: 8px;
@@ -52,9 +52,9 @@ h3 {
   font-family: "Plus Jakarta Sans";
   font-size: 15px;
   font-weight: 600;
-  border: 1.5px solid #C1C6CF;
-  background: #FFFFFF;
-  color: #201D29;
+  border: 1.5px solid #c1c6cf;
+  background: #ffffff;
+  color: #201d29;
   padding: 10px 30px;
   border-radius: 8px;
 }
@@ -63,93 +63,91 @@ h3 {
   font-family: "Sinkin Sans";
   font-size: 38px;
   font-weight: 600;
-  color: #201D29;
+  color: #201d29;
 }
 
 .main-title-2 {
   font-family: "Sinkin Sans";
   font-size: 32px;
   font-weight: 600;
-  color: #201D29;
+  color: #201d29;
 }
-
 
 .trending-content {
   font-family: "Sinkin Sans";
   font-size: 17px !important;
   font-weight: 400 !important;
-  color: #67656B !important;
-
+  color: #67656b !important;
 }
 
 .aboute-text {
   font-family: Plus Jakarta Sans;
   font-size: 1rem;
   font-weight: 400;
-  color: #67656B;
+  color: #67656b;
 }
 
 .tag-1 {
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 500;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-2 {
   font-family: "Plus Jakarta Sans";
   font-size: 13px;
   font-weight: 400;
-  color: #67656B;
+  color: #67656b;
 }
 
 .tag-3 {
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 700;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-4 {
   font-family: "Plus Jakarta Sans";
   font-size: 15px;
   font-weight: 400;
-  color: #67656B;
+  color: #67656b;
 }
 
 .tag-5 {
   font-family: "Plus Jakarta Sans";
   font-size: 15px;
   font-weight: 700;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-6 {
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 600;
-  color: #11527E;
+  color: #11527e;
 }
 
 .tag-7 {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-weight: 600;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-8 {
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 600;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-9 {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-weight: 400;
-  color: #67656B;
+  color: #67656b;
   margin-top: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -164,55 +162,42 @@ h3 {
   font-family: "Plus Jakarta Sans";
   font-size: 19px;
   font-weight: 600;
-  color: #201D29;
+  color: #201d29;
 }
 
 .tag-11 {
   font-family: "Plus Jakarta Sans";
   font-size: 17px;
   font-weight: 400;
-  /* color: #67656B; */
+  color: #67656B;
+}
+
+.tag-12 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #201d29;
+  font-family: "Plus Jakarta Sans" !important;
+}
+
+.tag-13 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #11527E;
+  font-family: "Plus Jakarta Sans" !important;
+}
+
+.tag-14 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #67656B;
+  font-family: "Plus Jakarta Sans" !important;
 }
 
 .font-apply {
   font-family: "Plus Jakarta Sans" !important;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .banner .grid {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .banner .right-side-image {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    padding-top: 6rem;
-  }
-
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-
-  .banner .search-bar {
-    padding: 0 1rem;
-  }
-}
-
 @media (max-width: 640px) {
-  .banner h1 {
-    font-size: 2rem;
-  }
-
-  .banner .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .aboute-text {
     font-size: 15px;
   }
@@ -235,14 +220,14 @@ h3 {
 
   .mobile-view {
     height: 0% !important;
-    width: 80% !important;
+    width: 70% !important;
   }
 
   .tag-10 {
     font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 600;
-    color: #201D29;
+    color: #201d29;
   }
 
   .tag-11 {
@@ -251,11 +236,9 @@ h3 {
     font-weight: 400;
   }
 
-  .banner h1 {
-    font-size: 1.5rem;
+  .tag-12 {
+    font-size: 30px;
   }
-
-
 }
 
 /* Professional Image Section Styles */
@@ -473,8 +456,6 @@ h3 {
   padding: 10px 25px;
 }
 
-/* banner */
-
 /* browser */
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -628,7 +609,6 @@ h3 {
 @media (max-width: 768px) {
   .faq-item {
     margin-bottom: 0.5rem;
-  
   }
 
   .faq-button {
@@ -755,7 +735,7 @@ h3 {
 
   .recruitment .transform {
     margin-bottom: 1.5rem;
-    padding-left: 2rem;
+
   }
 }
 

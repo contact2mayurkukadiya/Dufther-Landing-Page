@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of your page (150-160 characters).">
+    <meta name="description" content="Dufther: Your gateway to a new digital experience.">
     <meta name="keywords" content="keyword1, keyword2, keyword3">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="">
     <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dufther" />
+    <meta property="og:description" content="Dufther: Your gateway to a new digital experience" />
+    <meta property="og:image" content="assets/images/Banner (1).png" />
+    <meta property="og:url" content="https://contact2mayurkukadiya.github.io/Dufther-Landing-Page/" />
     <link rel="preload" href="assets/font/sinkin-sans/SinkinSans-400Regular.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
     <title>Dufther</title>
 </head>
 
@@ -98,7 +102,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
                         <!-- Left Side - Illustration -->
                         <div class="order-2 lg:order-1">
-                            <img src="assets/images/Ð¡Ð»Ð¾Ð¹_1.svg" alt="Collaborative Recruitment"
+                            <img src="assets/images/duftherlimage.svg" alt="Collaborative Recruitment"
                                 class="w-full h-auto">
                         </div>
 
@@ -992,52 +996,11 @@
             </div>
         </div>
 
-        <button id="scrollToTopBtn" class="toTopBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-        </button>
     </div>
 
 
     <!-- script file -->
     <script src="./assets/scripts/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script>
-        // Initialize Locomotive Scroll
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            smoothMobile: false,
-            multiplier: 1,
-            lerp: 0.05,
-            getDirection: true,
-            getSpeed: true,
-            class: 'is-revealed',
-        });
-
-        // Optional: Refresh scroll on page load
-        window.addEventListener('load', () => {
-            scroll.update();
-        });
-
-        // Optional: Refresh scroll on window resize
-        window.addEventListener('resize', () => {
-            scroll.update();
-        });
-
-
-        // Scroll to Top Button Functionality
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-        scrollToTopBtn.addEventListener('click', () => {
-            scroll.scrollTo(0, {
-                duration: 1000,  // Time in milliseconds
-                easing: [0.25, 0.1, 0.25, 1], // Smooth easing curve
-                offset: 0       // No offset, scrolls to the very top
-            });
-        });
-    </script>
 
     <!-- gasap -->
     <script>
@@ -1105,6 +1068,7 @@
             });
         });
     </script>
+
 
 </body>
 

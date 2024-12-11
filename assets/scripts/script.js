@@ -30,63 +30,63 @@ window.addEventListener('resize', () => {
 const sectors = [
     {
         name: 'Pharma',
-        image: '/assets/images/chemicals.png',
-        icon: '/assets/icons/1.png'
+        image: 'assets/images/chemicals.png',
+        icon: 'assets/icons/1.png'
     },
     {
         name: 'Manufacturing',
         image: 'assets/images/manufacturing.png',
-        icon: '/assets/icons/2.png'
+        icon: 'assets/icons/2.png'
     },
     {
         name: 'Construction',
         image: 'assets/images/consultant.png',
-        icon: '/assets/icons/3.png'
+        icon: 'assets/icons/3.png'
     },
     {
         name: 'Chemicals',
         image: 'assets/images/chemicals.png',
-        icon: '/assets/icons/4.png'
+        icon: 'assets/icons/4.png'
     },
     {
         name: 'Pharma',
-        image: '/assets/images/chemicals.png',
-        icon: '/assets/icons/1.png'
+        image: 'assets/images/chemicals.png',
+        icon: 'assets/icons/1.png'
     },
     {
         name: 'Manufacturing',
         image: 'assets/images/manufacturing.png',
-        icon: '/assets/icons/2.png'
+        icon: 'assets/icons/2.png'
     },
     {
         name: 'Construction',
         image: 'assets/images/consultant.png',
-        icon: '/assets/icons/3.png'
+        icon: 'assets/icons/3.png'
     },
     {
         name: 'Chemicals',
         image: 'assets/images/chemicals.png',
-        icon: '/assets/icons/4.png'
+        icon: 'assets/icons/4.png'
     },
     {
         name: 'Pharma',
-        image: '/assets/images/chemicals.png',
-        icon: '/assets/icons/1.png'
+        image: 'assets/images/chemicals.png',
+        icon: 'assets/icons/1.png'
     },
     {
         name: 'Manufacturing',
         image: 'assets/images/manufacturing.png',
-        icon: '/assets/icons/2.png'
+        icon: 'assets/icons/2.png'
     },
     {
         name: 'Construction',
         image: 'assets/images/consultant.png',
-        icon: '/assets/icons/3.png'
+        icon: 'assets/icons/3.png'
     },
     {
         name: 'Chemicals',
         image: 'assets/images/chemicals.png',
-        icon: '/assets/icons/4.png'
+        icon: 'assets/icons/4.png'
     }
 ];
 
